@@ -1,0 +1,39 @@
+using UnityEngine;
+using UnityEngine.SceneManagement;
+
+public class ContactDestroy : MonoBehaviour
+{
+    public AudioClip hitSound;
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (gameObject.CompareTag(collision.gameObject.tag))
+        {
+            return;
+        }
+
+        else if (!gameObject.CompareTag("Projectile"))
+        {
+            AudioManager.Instance.PlayClip(hitSound);
+        }
+
+        if (collision.gameObject.CompareTag("Item"))
+        {
+            return;
+        }
+
+        else if (gameObject.CompareTag("Asteroid") && collision.gameObject.CompareTag("Player"))
+        {   
+            return;
+        }
+
+        else if (gameObject.CompareTag("Player"))
+        {   
+            GameManager.finalScore = GameManager.Instance.score;
+
+            SceneManager.LoadScene(3);
+        }
+
+        Destroy(gameObject);
+    }
+}
