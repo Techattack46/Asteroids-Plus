@@ -25,6 +25,11 @@ public class AsteroidSpawner : MonoBehaviour
             Spawn();
             ResetTimer();
         }
+
+        else if (maxSpawnTime < minSpawnTime)
+        {
+            GameManager.Instance.bossMayEnter = true;
+        }
     }
 
     private void Spawn()

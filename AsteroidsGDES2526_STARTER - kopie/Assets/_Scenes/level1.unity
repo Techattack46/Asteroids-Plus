@@ -119,6 +119,51 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &275983357
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 275983358}
+  - component: {fileID: 275983359}
+  m_Layer: 0
+  m_Name: EnemySpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &275983358
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 275983357}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1278180263}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &275983359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 275983357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06edcbbe62fe8f7459f7cdaaf4bf6451, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemySpawner
+  bossPrefab: {fileID: 3252578675589972747, guid: 1225ccafe4b56ac419bdb5832aaae2e7, type: 3}
 --- !u!1 &277037600
 GameObject:
   m_ObjectHideFlags: 0
@@ -652,6 +697,7 @@ Transform:
   m_Children:
   - {fileID: 1333431989}
   - {fileID: 1778411272}
+  - {fileID: 275983358}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1299925710
@@ -1062,7 +1108,7 @@ MonoBehaviour:
   equipDuration: 15
   equipSound: {fileID: 8300000, guid: 5b902683e002c174fb90ad962dec2061, type: 3}
   fizzleSound: {fileID: 8300000, guid: 834b939a9f6d4d545b8be884ac434c5d, type: 3}
-  bossSpawned: 0
+  bossEntrance: 0
 --- !u!1 &1726365705
 GameObject:
   m_ObjectHideFlags: 0
