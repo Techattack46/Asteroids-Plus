@@ -22,6 +22,8 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
+        equipTextMesh = GameObject.FindWithTag("UI Event")?.GetComponent<TextMeshProUGUI>();
+
         if (instance != null)
             Destroy(instance.gameObject);
         instance = this;
@@ -29,8 +31,6 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        equipTextMesh = GameObject.FindWithTag("UI Event")?.GetComponent<TextMeshProUGUI>();
-
         scoreboard.text = score.ToString();
         score = 0;
     }

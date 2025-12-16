@@ -286,7 +286,7 @@ GameObject:
   - component: {fileID: 591578775}
   m_Layer: 5
   m_Name: ExpositionText
-  m_TagString: Untagged
+  m_TagString: UI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -622,7 +622,7 @@ GameObject:
   - component: {fileID: 1037643740}
   m_Layer: 5
   m_Name: TutorialText
-  m_TagString: Untagged
+  m_TagString: UI
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
