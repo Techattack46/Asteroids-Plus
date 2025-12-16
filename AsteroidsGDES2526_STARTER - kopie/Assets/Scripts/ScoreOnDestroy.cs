@@ -6,6 +6,14 @@ public class ScoreOnDestroy : MonoBehaviour
 
     private void OnDestroy()
     {
-        GameManager.Instance.score += points;
+        if ((!GameManager.Instance.bossHasSpawned) && gameObject.CompareTag("Asteroid"))
+        {
+            GameManager.Instance.score += points;
+        }
+
+        else if (GameManager.Instance.bossHasSpawned && gameObject.CompareTag("Enemy"))
+        {
+            GameManager.Instance.score += points;
+        }
     }
 }

@@ -102,6 +102,7 @@ GameObject:
   - component: {fileID: 8804821917451709088}
   - component: {fileID: 8792561184708141760}
   - component: {fileID: 8268211158891954080}
+  - component: {fileID: 4680549030062761847}
   m_Layer: 8
   m_Name: Boss
   m_TagString: Enemy
@@ -118,8 +119,8 @@ Transform:
   m_GameObject: {fileID: 3252578675589972747}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0, y: 0, z: 5.7}
-  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_LocalPosition: {x: 0, y: 0, z: 6}
+  m_LocalScale: {x: 3.7, y: 3.7, z: 3.7}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 9207096734575856661}
@@ -144,7 +145,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.45
+  m_Radius: 0.42
   m_Center: {x: 0, y: 0, z: -0.15}
 --- !u!54 &8268211158891954080
 Rigidbody:
@@ -173,3 +174,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
+--- !u!114 &4680549030062761847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3252578675589972747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7c1828f70844284c920dfeba99bdc07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ScoreOnDestroy
+  points: 100
