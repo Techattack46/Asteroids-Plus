@@ -987,7 +987,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1618969944}
   bulletPrefab: {fileID: 2992537867741629695, guid: 5024541295fb7aa4e9229dc3c36e2afc, type: 3}
-  bulletSpeed: 6
+  bulletSpeed: 7
   spawnDistance: 0.7
   gunSound: {fileID: 8300000, guid: e16aa4d2685d8744c9c6d17747b89329, type: 3}
   lifetime: 2
@@ -1005,7 +1005,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1618969944}
   laserPrefab: {fileID: 7088937748305971290, guid: 2a7175af4490c7444ba246cbe956844c, type: 3}
-  bulletSpeed: 8
+  bulletSpeed: 9
   spawnDistance: 0.7
   laserSound: {fileID: 8300000, guid: 5e2e2c2d9c374714e8dea4bd065e6d6a, type: 3}
   lifetime: 0.5
