@@ -17,7 +17,7 @@ public class EnemySpawner : MonoBehaviour
 
     private void BossSpawn()
     {
-        AudioManager.Instance.PlayLevelMusicIndex(1);
+        AudioManager.Instance.LevelMusicIndex(1);
         
         GameObject boss = Instantiate(bossPrefab);
         Debug.Log("Boss is spawning now.");

@@ -28,12 +28,19 @@ public class ContactDestroy : MonoBehaviour
         }
 
         else if (gameObject.CompareTag("Player"))
-        {   
-            GameManager.finalScore = GameManager.Instance.score;
-
-            SceneManager.LoadScene(3);
+        {
+            PlayerDeath();
         }
 
         Destroy(gameObject);
+    }
+
+    private void PlayerDeath()
+    {
+        GameManager.finalScore = GameManager.Instance.score;
+
+        SceneManager.LoadScene(3);
+
+        AudioManager.Instance.LevelMusicIndex(0);
     }
 }

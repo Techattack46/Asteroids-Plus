@@ -25,10 +25,10 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        PlayLevelMusicIndex(0);
+        LevelMusicIndex(0);
     }
 
-    public void PlayLevelMusicIndex(int index)
+    public void LevelMusicIndex(int index)
     {
         levelMusicSource.clip = levelMusic[index];
         levelMusicSource.Play();
