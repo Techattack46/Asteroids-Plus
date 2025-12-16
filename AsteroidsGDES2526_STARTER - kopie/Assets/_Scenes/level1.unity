@@ -163,7 +163,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06edcbbe62fe8f7459f7cdaaf4bf6451, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemySpawner
+  bossMusic: {fileID: 8300000, guid: f0b120d3b80cc9e42856464ec7d02248, type: 3}
   bossPrefab: {fileID: 3252578675589972747, guid: 1225ccafe4b56ac419bdb5832aaae2e7, type: 3}
+  entranceSpeed: 150
 --- !u!1 &277037600
 GameObject:
   m_ObjectHideFlags: 0
@@ -1108,7 +1110,8 @@ MonoBehaviour:
   equipDuration: 15
   equipSound: {fileID: 8300000, guid: 5b902683e002c174fb90ad962dec2061, type: 3}
   fizzleSound: {fileID: 8300000, guid: 834b939a9f6d4d545b8be884ac434c5d, type: 3}
-  bossEntrance: 0
+  bossMayEnter: 0
+  bossHasSpawned: 0
 --- !u!1 &1726365705
 GameObject:
   m_ObjectHideFlags: 0
