@@ -20,10 +20,21 @@ public class EnemySpawner : MonoBehaviour
         AudioManager.Instance.LevelMusicIndex(1);
         
         GameObject boss = Instantiate(bossPrefab);
-        Debug.Log("Boss is spawning now.");
 
         GameManager.Instance.bossHasSpawned = true;
 
+        AsteroidWipe();
+
         boss.GetComponent<Rigidbody>().AddForce(-transform.forward * entranceSpeed);
+    }
+
+    private void AsteroidWipe()
+    {
+        GameObject[] asteroids = GameObject.FindGameObjectsWithTag("Asteroid");
+
+        foreach (GameObject asteroid in asteroids)
+        {
+            Destroy(asteroid);
+        }
     }
 }
