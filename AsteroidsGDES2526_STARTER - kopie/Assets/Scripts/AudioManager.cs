@@ -1,9 +1,11 @@
 using UnityEngine;
 
-//Rosa's
+//Copied from Rosa's
 public class AudioManager : MonoBehaviour
 {
-    [SerializeField] private AudioSource sourcePrefab;
+    public AudioClip[] levelMusic;
+    [SerializeField] private AudioSource soundEffectSource;
+    [SerializeField] private AudioSource levelMusicSource;
 
     private static AudioManager instance;
     public static AudioManager Instance { get { return instance; } }
@@ -21,9 +23,20 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        PlayLevelMusicIndex(0);
+    }
+
+    public void PlayLevelMusicIndex(int index)
+    {
+        levelMusicSource.clip = levelMusic[index];
+        levelMusicSource.Play();
+    }
+    
     public void PlayClip(AudioClip clip)
     {
-        AudioSource source = Instantiate(sourcePrefab);
+        AudioSource source = Instantiate(soundEffectSource);
 
         source.clip = clip;
         source.volume = 1f;

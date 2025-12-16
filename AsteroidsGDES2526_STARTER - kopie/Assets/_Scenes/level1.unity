@@ -710,6 +710,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5117081799319214933, guid: 23cfe9b203453b7428f9985418ac1d04, type: 3}
+      propertyPath: sourcePrefab
+      value: 
+      objectReference: {fileID: 865023635182849879, guid: b79be5ac5fd87244c8b32c452ae88f4e, type: 3}
+    - target: {fileID: 5117081799319214933, guid: 23cfe9b203453b7428f9985418ac1d04, type: 3}
+      propertyPath: levelMusicSource
+      value: 
+      objectReference: {fileID: 1299925716}
+    - target: {fileID: 5117081799319214933, guid: 23cfe9b203453b7428f9985418ac1d04, type: 3}
+      propertyPath: soundEffectSource
+      value: 
+      objectReference: {fileID: 865023635182849879, guid: b79be5ac5fd87244c8b32c452ae88f4e, type: 3}
+    - target: {fileID: 5117081799319214933, guid: 23cfe9b203453b7428f9985418ac1d04, type: 3}
+      propertyPath: levelMusic.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5117081799319214933, guid: 23cfe9b203453b7428f9985418ac1d04, type: 3}
+      propertyPath: 'levelMusic.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: cdbee259349c70344ba6755c8d878afd, type: 3}
+    - target: {fileID: 5117081799319214933, guid: 23cfe9b203453b7428f9985418ac1d04, type: 3}
+      propertyPath: 'levelMusic.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8300000, guid: f0b120d3b80cc9e42856464ec7d02248, type: 3}
     - target: {fileID: 5733837383095713682, guid: 23cfe9b203453b7428f9985418ac1d04, type: 3}
       propertyPath: m_Name
       value: AudioManager
@@ -764,14 +788,14 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5733837383095713682, guid: 23cfe9b203453b7428f9985418ac1d04, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1299925713}
+      addedObject: {fileID: 1299925716}
   m_SourcePrefab: {fileID: 100100000, guid: 23cfe9b203453b7428f9985418ac1d04, type: 3}
 --- !u!1 &1299925712 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5733837383095713682, guid: 23cfe9b203453b7428f9985418ac1d04, type: 3}
   m_PrefabInstance: {fileID: 1299925710}
   m_PrefabAsset: {fileID: 0}
---- !u!82 &1299925713
+--- !u!82 &1299925716
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -782,7 +806,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: cdbee259349c70344ba6755c8d878afd, type: 3}
+  m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
