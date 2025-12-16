@@ -1,6 +1,6 @@
 using UnityEngine;
 
-//Rosa's
+//Copied from Rosa's
 public class AsteroidSpawner : MonoBehaviour
 {
     public GameObject asteroidPrefab;
@@ -19,7 +19,8 @@ public class AsteroidSpawner : MonoBehaviour
     {
         timer -= Time.deltaTime;
 
-        if (timer <= 0)
+        //should mean that asteroids will stop spawning once maxSpawnTime reaches a certain value
+        if ((timer <= 0) && (maxSpawnTime >= minSpawnTime))
         {
             Spawn();
             ResetTimer();
@@ -29,11 +30,6 @@ public class AsteroidSpawner : MonoBehaviour
     private void Spawn()
     {
         Instantiate(asteroidPrefab, GetRandomPositionOffScreen(), Quaternion.identity, transform);
-
-        if (maxSpawnTime <= minSpawnTime)
-        {
-            return;
-        }
 
         maxSpawnTime -= spawnTimeDecrease;
     }

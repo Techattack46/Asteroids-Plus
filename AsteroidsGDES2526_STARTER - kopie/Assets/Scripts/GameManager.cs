@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
     public AudioClip equipSound;
     public AudioClip fizzleSound;
 
-    public bool bossSpawned = false;
+    public bool bossEntrance = false;
 
     private void Awake()
     {
