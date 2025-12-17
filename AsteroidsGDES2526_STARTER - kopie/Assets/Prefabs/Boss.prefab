@@ -101,7 +101,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8804821917451709088}
   - component: {fileID: 8792561184708141760}
-  - component: {fileID: 4680549030062761847}
   - component: {fileID: -2592273845735967226}
   m_Layer: 7
   m_Name: Boss
@@ -147,19 +146,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.42
   m_Center: {x: 0, y: 0, z: -0.15}
---- !u!114 &4680549030062761847
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3252578675589972747}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7c1828f70844284c920dfeba99bdc07, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ScoreOnDestroy
-  points: 100
 --- !u!114 &-2592273845735967226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173,3 +159,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Healthbar
   health: 45
+  points: 100

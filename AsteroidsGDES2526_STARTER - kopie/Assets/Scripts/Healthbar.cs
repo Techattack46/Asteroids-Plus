@@ -4,11 +4,14 @@ using UnityEngine.SceneManagement;
 public class Healthbar : MonoBehaviour
 {
     public int health;
+    public int points;
 
     private void Update()
     {
         if (health <= 0)
         {
+            GameManager.Instance.score += points;
+            
             SceneManager.LoadScene(4);
         }
     }
