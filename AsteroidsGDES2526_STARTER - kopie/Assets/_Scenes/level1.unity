@@ -166,6 +166,8 @@ MonoBehaviour:
   bossMusic: {fileID: 8300000, guid: f0b120d3b80cc9e42856464ec7d02248, type: 3}
   bossPrefab: {fileID: 3252578675589972747, guid: 1225ccafe4b56ac419bdb5832aaae2e7, type: 3}
   entranceSpeed: 150
+  entranceDuration: 2
+  targetLocation: {fileID: 1196923257}
 --- !u!1 &277037600
 GameObject:
   m_ObjectHideFlags: 0
@@ -668,6 +670,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &1196923256
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1196923257}
+  m_Layer: 0
+  m_Name: BossTargetLocation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1196923257
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1196923256}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 2}
+  m_LocalScale: {x: 3.7, y: 3.7, z: 3.7}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &1278180262
 GameObject:
   m_ObjectHideFlags: 0
@@ -993,94 +1026,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 3987265570482184523, guid: 6b2f4193f2b434b4eaa0e6e371f23ff1, type: 3}
-      propertyPath: hitSound
-      value: 
-      objectReference: {fileID: 8300000, guid: c5e57484ed9e60a46a692db7860e3d8b, type: 3}
-    - target: {fileID: 5344330666262172712, guid: 6b2f4193f2b434b4eaa0e6e371f23ff1, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 5864120440882639698, guid: 6b2f4193f2b434b4eaa0e6e371f23ff1, type: 3}
-      propertyPath: m_Drag
-      value: 0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 5864120440882639698, guid: 6b2f4193f2b434b4eaa0e6e371f23ff1, type: 3}
-      propertyPath: m_AngularDrag
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5864120440882639698, guid: 6b2f4193f2b434b4eaa0e6e371f23ff1, type: 3}
-      propertyPath: m_Constraints
-      value: 116
-      objectReference: {fileID: 0}
-    - target: {fileID: 5864120440882639698, guid: 6b2f4193f2b434b4eaa0e6e371f23ff1, type: 3}
-      propertyPath: m_LinearDamping
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5864120440882639698, guid: 6b2f4193f2b434b4eaa0e6e371f23ff1, type: 3}
-      propertyPath: m_AngularDamping
-      value: 0.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 7285125132201447630, guid: 6b2f4193f2b434b4eaa0e6e371f23ff1, type: 3}
-      propertyPath: MovementSpeed
-      value: 250
-      objectReference: {fileID: 0}
-    - target: {fileID: 8159130180228204578, guid: 6b2f4193f2b434b4eaa0e6e371f23ff1, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1942460987253603177, guid: 6b2f4193f2b434b4eaa0e6e371f23ff1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1618969945}
-    - targetCorrespondingSourceObject: {fileID: 1942460987253603177, guid: 6b2f4193f2b434b4eaa0e6e371f23ff1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1618969959}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6b2f4193f2b434b4eaa0e6e371f23ff1, type: 3}
---- !u!1 &1618969944 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1942460987253603177, guid: 6b2f4193f2b434b4eaa0e6e371f23ff1, type: 3}
-  m_PrefabInstance: {fileID: 1618969943}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1618969945
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1618969944}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd73d5b9329ad834da03a0f93d302214, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1618969944}
-  bulletPrefab: {fileID: 2992537867741629695, guid: 5024541295fb7aa4e9229dc3c36e2afc, type: 3}
-  bulletSpeed: 7
-  spawnDistance: 0.7
-  gunSound: {fileID: 8300000, guid: e16aa4d2685d8744c9c6d17747b89329, type: 3}
-  lifetime: 2
---- !u!114 &1618969959
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1618969944}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a131140d4e8d5a4ba01235fbd682811, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 1618969944}
-  laserPrefab: {fileID: 7088937748305971290, guid: 2a7175af4490c7444ba246cbe956844c, type: 3}
-  bulletSpeed: 9
-  spawnDistance: 0.7
-  laserSound: {fileID: 8300000, guid: 5e2e2c2d9c374714e8dea4bd065e6d6a, type: 3}
-  lifetime: 0.5
 --- !u!1 &1696605052
 GameObject:
   m_ObjectHideFlags: 0
@@ -1422,3 +1372,4 @@ SceneRoots:
   - {fileID: 1696605053}
   - {fileID: 1299925710}
   - {fileID: 1278180263}
+  - {fileID: 1196923257}

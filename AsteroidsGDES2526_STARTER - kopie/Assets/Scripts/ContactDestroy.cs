@@ -35,7 +35,15 @@ public class ContactDestroy : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private void PlayerDeath()
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    public static void PlayerDeath()
     {
         GameManager.finalScore = GameManager.Instance.score;
 

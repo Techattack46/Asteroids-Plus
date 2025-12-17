@@ -1,5 +1,4 @@
-using UnityEditor;
-using UnityEditor.Search;
+using System.Collections;
 using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
@@ -7,6 +6,8 @@ public class EnemySpawner : MonoBehaviour
     public AudioClip bossMusic;
     public GameObject bossPrefab;
     public float entranceSpeed;
+    public float entranceDuration;
+    public Transform targetLocation;
 
     private void Update()
     {
@@ -26,7 +27,19 @@ public class EnemySpawner : MonoBehaviour
 
         AsteroidWipe();
 
-        boss.GetComponent<Rigidbody>().AddForce(-transform.forward * entranceSpeed);
+        StartCoroutine(MoveToTargetRoutine(boss));
+    }
+
+    private IEnumerator MoveToTargetRoutine(GameObject boss)
+    {
+        Vector3 startPosition = boss.transform.position;
+        float time = 0f;
+        while (time <= 1f)
+        {
+            time += Time.deltaTime / entranceDuration;
+            boss.transform.position = Vector3.Lerp(startPosition, targetLocation.position, time);
+            yield return null;
+        }
     }
 
     private void AsteroidWipe()
