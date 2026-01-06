@@ -158,7 +158,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2992537867741629695, guid: 5024541295fb7aa4e9229dc3c36e2afc, type: 3}
   bulletSpeed: 7
   spawnDistance: 0.7
-  gunSound: {fileID: 8300000, guid: e16aa4d2685d8744c9c6d17747b89329, type: 3}
+  gunSound: {fileID: 8300000, guid: ae7497a9c3aff9a4f97e8563af214866, type: 3}
   lifetime: 2
 --- !u!114 &8905766903323241077
 MonoBehaviour:
