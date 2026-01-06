@@ -33,7 +33,7 @@ Transform:
   m_GameObject: {fileID: 1942460987253603177}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.02}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -59,7 +59,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.45
+  m_Radius: 0.6
   m_Center: {x: 0, y: 0, z: -0.15}
 --- !u!54 &5864120440882639698
 Rigidbody:
@@ -176,7 +176,7 @@ MonoBehaviour:
   laserPrefab: {fileID: 7088937748305971290, guid: 2a7175af4490c7444ba246cbe956844c, type: 3}
   bulletSpeed: 9
   spawnDistance: 0.7
-  laserSound: {fileID: 8300000, guid: 5e2e2c2d9c374714e8dea4bd065e6d6a, type: 3}
+  laserSound: {fileID: 8300000, guid: ab0471dc4616a9f428b5762d4683f0d0, type: 3}
   lifetime: 0.5
 --- !u!1 &5344330666262172712
 GameObject:
@@ -204,9 +204,9 @@ Transform:
   m_GameObject: {fileID: 5344330666262172712}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: -0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 0, y: -0, z: -0.1}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1173139029472221017}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
@@ -259,7 +259,7 @@ SpriteRenderer:
   m_SortingLayer: 2
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: eac4e887a7c464441a3fdf804fdbb55a, type: 3}
+  m_Sprite: {fileID: 783258770, guid: 32aa7d45f0c4d4645a1650bd5f4c6455, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

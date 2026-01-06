@@ -47,8 +47,8 @@ public class ContactDestroy : MonoBehaviour
     {
         GameManager.finalScore = GameManager.Instance.score;
 
+        AudioManager.Instance.LevelMusicIndex(2);
+        
         SceneManager.LoadScene(3);
-
-        AudioManager.Instance.LevelMusicIndex(0);
     }
 }

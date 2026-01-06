@@ -17,6 +17,8 @@ public class GameOverMenu : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             SceneManager.LoadScene(scene);
+
+            AudioManager.Instance.LevelMusicIndex(0);
         }
     }
 }

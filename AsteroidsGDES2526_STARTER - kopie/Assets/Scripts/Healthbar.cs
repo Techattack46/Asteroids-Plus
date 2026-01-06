@@ -14,6 +14,8 @@ public class Healthbar : MonoBehaviour
 
             GameManager.finalScore = GameManager.Instance.score;
 
+            AudioManager.Instance.LevelMusicIndex(2);
+
             SceneManager.LoadScene(4);
         }
     }
