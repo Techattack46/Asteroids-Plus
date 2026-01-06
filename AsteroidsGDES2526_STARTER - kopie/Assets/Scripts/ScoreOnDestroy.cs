@@ -10,10 +10,5 @@ public class ScoreOnDestroy : MonoBehaviour
         {
             GameManager.Instance.score += points;
         }
-
-        else if (GameManager.Instance.bossHasSpawned && gameObject.CompareTag("Enemy"))
-        {
-            GameManager.Instance.score += points;
-        }
     }
 }

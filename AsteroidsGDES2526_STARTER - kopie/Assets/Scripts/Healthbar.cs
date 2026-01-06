@@ -11,7 +11,9 @@ public class Healthbar : MonoBehaviour
         if (health <= 0)
         {
             GameManager.Instance.score += points;
-            
+
+            GameManager.finalScore = GameManager.Instance.score;
+
             SceneManager.LoadScene(4);
         }
     }
