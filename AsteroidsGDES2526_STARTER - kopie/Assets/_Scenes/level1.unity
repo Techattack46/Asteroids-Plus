@@ -893,6 +893,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8905766903323241077, guid: 6b2f4193f2b434b4eaa0e6e371f23ff1, type: 3}
+      propertyPath: laserVolume
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

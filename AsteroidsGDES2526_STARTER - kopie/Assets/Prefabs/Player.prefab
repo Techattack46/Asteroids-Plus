@@ -178,6 +178,7 @@ MonoBehaviour:
   bulletSpeed: 9
   spawnDistance: 0.7
   laserSound: {fileID: 8300000, guid: ab0471dc4616a9f428b5762d4683f0d0, type: 3}
+  laserVolume: 10
   lifetime: 0.5
 --- !u!1 &5344330666262172712
 GameObject:
