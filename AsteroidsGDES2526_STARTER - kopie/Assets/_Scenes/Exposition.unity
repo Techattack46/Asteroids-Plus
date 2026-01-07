@@ -334,8 +334,8 @@ MonoBehaviour:
     of the Alpha Centauri system. You have been sent out to intercept the Eumelus
     at what is said to be its travel path''s next junction: a volatile asteroid belt.'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2743615fa1367e640bfb2d80ec03e0b4, type: 2}
-  m_sharedMaterial: {fileID: -919263143881968110, guid: 2743615fa1367e640bfb2d80ec03e0b4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7cbd10b42b1ec224da93d0d273d35ebb, type: 2}
+  m_sharedMaterial: {fileID: 3409434512074407829, guid: 7cbd10b42b1ec224da93d0d273d35ebb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -487,8 +487,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: <-fade>Press 'space' to continue</->
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2743615fa1367e640bfb2d80ec03e0b4, type: 2}
-  m_sharedMaterial: {fileID: -919263143881968110, guid: 2743615fa1367e640bfb2d80ec03e0b4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7cbd10b42b1ec224da93d0d273d35ebb, type: 2}
+  m_sharedMaterial: {fileID: 3409434512074407829, guid: 7cbd10b42b1ec224da93d0d273d35ebb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -668,8 +668,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: '''W'' to accelerate. ''Q'' & ''E'' to rotate. Mouse Button 1 to fire.'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 2743615fa1367e640bfb2d80ec03e0b4, type: 2}
-  m_sharedMaterial: {fileID: -919263143881968110, guid: 2743615fa1367e640bfb2d80ec03e0b4, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7cbd10b42b1ec224da93d0d273d35ebb, type: 2}
+  m_sharedMaterial: {fileID: 3409434512074407829, guid: 7cbd10b42b1ec224da93d0d273d35ebb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
