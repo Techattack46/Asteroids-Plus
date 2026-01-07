@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class Healthbar : MonoBehaviour
 {
-    public int health;
+    public static int health;
     public int points;
 
     private void Update()
