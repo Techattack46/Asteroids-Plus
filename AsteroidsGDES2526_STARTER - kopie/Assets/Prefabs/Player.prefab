@@ -142,6 +142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85f9aeb8b9e629242817880736fbfbe3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossContact
+  deathSound: {fileID: 8300000, guid: c5e57484ed9e60a46a692db7860e3d8b, type: 3}
 --- !u!114 &1436444709240198829
 MonoBehaviour:
   m_ObjectHideFlags: 0
