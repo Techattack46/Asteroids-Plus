@@ -1,13 +1,23 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Healthbar : MonoBehaviour
 {
-    public static int health;
+    public float health;
     public int points;
+    public Slider healthSlider;
+    private float maxHealth;
+
+    private void Start()
+    {
+        maxHealth = health;
+    }
 
     private void Update()
     {
+        healthSlider.value = health / maxHealth;
+        
         if (health <= 0)
         {
             GameManager.Instance.score += points;

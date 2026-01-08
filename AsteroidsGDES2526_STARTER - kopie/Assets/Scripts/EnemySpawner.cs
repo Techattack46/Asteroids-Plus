@@ -6,7 +6,6 @@ public class EnemySpawner : MonoBehaviour
 {
     public AudioClip bossMusic;
     public GameObject bossPrefab;
-    public GameObject healthbar;
     public float entranceSpeed;
     public float entranceDuration;
     public Transform targetLocation;
@@ -15,8 +14,6 @@ public class EnemySpawner : MonoBehaviour
     {
         if (!GameManager.Instance.bossHasSpawned && GameManager.Instance.bossMayEnter)
         {
-            healthbar.SetActive(true);
-
             BossSpawn();
         }
     }
