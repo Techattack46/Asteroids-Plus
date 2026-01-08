@@ -576,7 +576,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: <-fade>Press 'ESC' to return to startup</->
+  m_text: <-fade>Press 'ENTER' to return to startup</->
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 7cbd10b42b1ec224da93d0d273d35ebb, type: 2}
   m_sharedMaterial: {fileID: 3409434512074407829, guid: 7cbd10b42b1ec224da93d0d273d35ebb, type: 2}

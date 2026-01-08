@@ -30,7 +30,7 @@ public class GameOverMenu : MonoBehaviour
 
     private void ReturnToStartupCheck()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Return))
         {
             SceneManager.LoadScene(0);
 
