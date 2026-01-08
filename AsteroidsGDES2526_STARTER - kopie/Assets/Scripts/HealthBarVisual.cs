@@ -9,5 +9,4 @@ public class HealthBarVisual : MonoBehaviour
     {
         healthSlider.value = Healthbar.health;
     }
-
 }

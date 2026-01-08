@@ -14,11 +14,27 @@ public class GameOverMenu : MonoBehaviour
 
     private void Update()
     {
+        RetryCheck();
+        ReturnToStartupCheck();
+    }
+
+    private void RetryCheck()
+    {
         if (Input.GetKeyDown(KeyCode.Space))
         {
             SceneManager.LoadScene(scene);
 
             AudioManager.Instance.LevelMusicIndex(0);
+        }
+    }
+
+    private void ReturnToStartupCheck()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            SceneManager.LoadScene(0);
+
+            AudioManager.Instance.levelMusicSource.Stop();
         }
     }
 }

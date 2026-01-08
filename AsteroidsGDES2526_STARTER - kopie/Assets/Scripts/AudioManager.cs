@@ -5,7 +5,7 @@ public class AudioManager : MonoBehaviour
 {
     public AudioClip[] levelMusic;
     [SerializeField] private AudioSource soundEffectSource;
-    [SerializeField] private AudioSource levelMusicSource;
+    public AudioSource levelMusicSource;
 
     private static AudioManager instance;
     public static AudioManager Instance { get { return instance; } }
