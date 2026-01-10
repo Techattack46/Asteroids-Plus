@@ -165,7 +165,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemySpawner
   bossMusic: {fileID: 8300000, guid: f0b120d3b80cc9e42856464ec7d02248, type: 3}
   bossPrefab: {fileID: 3252578675589972747, guid: 1225ccafe4b56ac419bdb5832aaae2e7, type: 3}
-  healthbar: {fileID: 0}
   entranceSpeed: 150
   entranceDuration: 2
   targetLocation: {fileID: 1196923257}
@@ -744,6 +743,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5117081799319214933, guid: 23cfe9b203453b7428f9985418ac1d04, type: 3}
+      propertyPath: 'levelMusic.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 61ab663e2ca41ef42b2ca0dbadfd8f23, type: 3}
     - target: {fileID: 5733837383095713682, guid: 23cfe9b203453b7428f9985418ac1d04, type: 3}
       propertyPath: m_Name
       value: AudioManager
@@ -1033,8 +1036,8 @@ MonoBehaviour:
   equipText: Secondary weapon equipped. Use Mouse Button 2 to fire.
   fizzleText: Out of secondary fire. Find a new capsule to reequip!
   equipDuration: 15
-  equipSound: {fileID: 8300000, guid: 5b902683e002c174fb90ad962dec2061, type: 3}
-  fizzleSound: {fileID: 8300000, guid: 834b939a9f6d4d545b8be884ac434c5d, type: 3}
+  equipSound: {fileID: 8300000, guid: d6f43eae88cfaf84c83a706c351f891c, type: 3}
+  fizzleSound: {fileID: 8300000, guid: dc9c821d68d22134995e23d73cc37fe5, type: 3}
   bossMayEnter: 0
   bossHasSpawned: 0
 --- !u!1 &1726365705
