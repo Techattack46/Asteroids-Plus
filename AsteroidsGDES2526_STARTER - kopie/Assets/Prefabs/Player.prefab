@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: -1942887776079128901}
   - component: {fileID: 1436444709240198829}
   - component: {fileID: 8905766903323241077}
+  - component: {fileID: -6592823690673858985}
   m_Layer: 6
   m_Name: Player
   m_TagString: Player
@@ -129,7 +130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61850d487396b554d81103b1e5320cf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitSound: {fileID: 8300000, guid: c5e57484ed9e60a46a692db7860e3d8b, type: 3}
+  hitSound: {fileID: 8300000, guid: 46ca475d3581c884ab4db9367995782f, type: 3}
 --- !u!114 &-1942887776079128901
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,7 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85f9aeb8b9e629242817880736fbfbe3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BossContact
-  deathSound: {fileID: 8300000, guid: c5e57484ed9e60a46a692db7860e3d8b, type: 3}
+  deathSound: {fileID: 8300000, guid: 46ca475d3581c884ab4db9367995782f, type: 3}
 --- !u!114 &1436444709240198829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,6 +180,18 @@ MonoBehaviour:
   spawnDistance: 0.7
   laserSound: {fileID: 8300000, guid: ab0471dc4616a9f428b5762d4683f0d0, type: 3}
   lifetime: 0.5
+--- !u!114 &-6592823690673858985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1942460987253603177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4de4f30def10ae47b486d4a390f04e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RetryMusicLoad
 --- !u!1 &5344330666262172712
 GameObject:
   m_ObjectHideFlags: 0

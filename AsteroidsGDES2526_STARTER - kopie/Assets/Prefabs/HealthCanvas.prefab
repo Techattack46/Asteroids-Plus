@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4360420979268011495}
   - component: {fileID: 7619581309663336333}
-  - component: {fileID: 1516366547735284076}
   m_Layer: 5
   m_Name: Healthbar
   m_TagString: UI
@@ -90,19 +89,6 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &1516366547735284076
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: -5978928121261341818, guid: 71688befa9b7b164cae7964e9d3f85e6, type: 3}
-  m_PrefabInstance: {fileID: 85000459514523487}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 503135148278427200}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a389b19592bb0746bfa0c8c9e2049d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HealthBarVisual
-  healthSlider: {fileID: 7619581309663336333}
 --- !u!1 &5416892783888798110
 GameObject:
   m_ObjectHideFlags: 0
@@ -455,7 +441,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Healthbar
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
